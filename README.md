@@ -40,3 +40,42 @@ Projects are on branch backend and branch frontend
        RegistrationNumber NVARCHAR(50),
        BreakdownDate DATETIME
    );
+
+### BackEnd
+**Update appsettings.json with your database connection string:**
+
+{
+  "ConnectionStrings": {
+    "DefaultConnection": "Server=your_server;Database=BreakdownDB;User Id=your_user;Password=your_password;TrustServerCertificate=True;"
+  },
+  "Logging": {
+    "LogLevel": {
+      "Default": "Information",
+      "Microsoft": "Warning",
+      "Microsoft.Hosting.Lifetime": "Information"
+    }
+  },
+  "AllowedHosts": "*"
+}
+
+**Run the migrations to create the database schema:**
+dotnet ef migrations add InitialCreate
+dotnet ef database update
+
+Run the application
+
+### FrontEnd
+Frontend (React)
+Navigate to the frontend directory.
+
+Install the necessary packages:
+npm install
+
+Update the API endpoints in App.jsx if necessary:
+axios.get('http://localhost:5000/api/breakdowns');
+
+
+Run the application
+
+
+
