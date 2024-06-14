@@ -3,6 +3,7 @@
 # Breakdown Management Application
 
 This is a basic web application for managing vehicle breakdowns. The application allows users to create, update, and list breakdowns. It uses a SQL Server database for data storage, a C# Web API backend, and a React frontend.
+Projects are on branch backend and branch frontend
 
 ## Features
 
