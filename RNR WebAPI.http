@@ -1,0 +1,6 @@
+@RNR_WebAPI_HostAddress = http://localhost:5231
+
+GET {{RNR_WebAPI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
